@@ -1,0 +1,14 @@
+:root {
+  --bg: #f6f7fb; --card: #fff; --text: #14172b; --muted: #6b7190; --line: #e6e8f2;
+  font-family: Inter, 'Segoe UI', Roboto, system-ui, sans-serif;
+  color-scheme: light;
+}
+[data-theme='dark'] {
+  --bg: #0b0d1a; --card: #161a30; --text: #eceffd; --muted: #98a0c8; --line: #252a4a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); transition: background .3s, color .3s; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid #ff9f00; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
